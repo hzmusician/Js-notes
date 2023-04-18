@@ -164,34 +164,138 @@ console.log(sigara.replace("Dark","Light")) // Aynı şekilde değişmesini iste
 
 // CHARAT()
 
-let cümle = "30 Days Of Javascript"
+let sample = "30 Days Of Javascript"
 
-console.log(cümle.charAt(0)) // 0. İndeksin değerini döndürdük. Çıktı: 3
+console.log(sample.charAt(0)) // 0. İndeksin değerini döndürdük. Çıktı: 3
 
-let lastIndex = cümle.length - 1 // Toplamda 21 karakter olan bu string'de -1 yaparak 20 sayısına ulaşacağız.
-console.log(cümle.charAt(lastIndex)) // 0'dan başlayarak saydığımızda t harfine ulaşacağız. Yani 20. karaktere.
+let lastIndex = sample.length - 1 // Toplamda 21 karakter olan bu string'de -1 yaparak 20 sayısına ulaşacağız.
+console.log(sample.charAt(lastIndex)) // 0'dan başlayarak saydığımızda t harfine ulaşacağız. Yani 20. karaktere.
 
 
 
 // CHARCODEAT()
 
-console.log(cümle.charCodeAt(3)) // İndex değerinin ASCII tablosuna göre değerini bastık. Çıktı: 68
+console.log(sample.charCodeAt(3)) // İndex değerinin ASCII tablosuna göre değerini bastık. Çıktı: 68
 
-console.log(cümle.charCodeAt(lastIndex)) // Aynı şekilde tablo üzerinde değerini bastık. Çıktı: 116
+console.log(sample.charCodeAt(lastIndex)) // Aynı şekilde tablo üzerinde değerini bastık. Çıktı: 116
+
 
 
 // INDEXOF()
 
 // Belirtilen değerin index'ini bulmamızı sağlar, bulamazsa -1 döndürür. Bu metot büyük/küçük harfe duyarlıdır.
 
-console.log(cümle.indexOf("D"))           // 3
-console.log(string.indexOf('Days'))       // 3
-console.log(string.indexOf('days'))       // -1
-console.log(string.indexOf('a'))          // 4
-console.log(string.indexOf('JavaScript')) // 11
-console.log(string.indexOf('Script'))     //15
-console.log(string.indexOf('script'))     // -1
+console.log(sample.indexOf("D"))           // 3
+console.log(sample.indexOf('Days'))       // 3
+console.log(sample.indexOf('days'))       // -1
+console.log(sample.indexOf('a'))          // 4
+console.log(sample.indexOf('JavaScript')) // 11
+console.log(sample.indexOf('Script'))     //15
+console.log(sample.indexOf('script'))     // -1
+
 
 
 // LASTINDEXOF()
+
+console.log(sample.lastIndexOf("Days")) // 3 - Bu metot ile belirtilen değerin son indeksini bulduk
+console.log(sample.lastIndexOf("java")) // -1 - Büyük küçük harfa duyarlı olmasından dolayı burada -1 döndürür.
+
+
+
+// CONCAT()
+
+let sampleConcat = "30"
+// concat() metodu ile değişkenimizin devamında ne yazmasını istediğimizi belirttik.
+console.log(sampleConcat.concat(" Days ","of ", "Javascript")) // Çıktı: 30 Days of Javascript
+console.log(sampleConcat.concat(" ways ","to ","die")) // Çıktı: 30 ways to die
+
+
+
+// STARTSWITH()
+
+let sampleStartsWith = "Love is the best to in this world"
+
+console.log(sampleStartsWith.startsWith("Love")) // True - Bu metot ile string ögesinin ne ile başladığını döndürdük.
+console.log(sampleStartsWith.startsWith("love")) // false - Büyük/küçük harfe duyarlı bir metotdur.
+
+
+
+// ENDSWITH()
+
+/* Bu metot ise startsWith() metodunun tam tersi olarak çalışır. Ne ile bittiğini döndürmemizi sağlar
+Yine aynı şekilde büyük/küçük harfe duyarlıdır. */
+
+
+
+// SEARCH
+
+let sampleSearch = "I love Javascript. If you do not love Javascript what else can you love."
+// Argüman olarak bir alt dize alır ve ilk eşleşmenin dizinini döndürür. Arama değeri bir dize veya normal ifade kalıbı olabilir.
+console.log(sampleSearch.search("love")) // Çıktı: 2
+console.log(sampleSearch.search("you")) // Çıktı: 22
+
+
+
+// MATCH()
+
+let sampleMatch = "Love is love"
+/*Argüman olarak bir alt dize veya normal ifade kalıbı alır ve eşleşme varsa bir dizi döndürür, değilse null döndürür. Normal bir ifade kalıbının nasıl göründüğünü görelim. / işareti ile başlar ve / işareti ile biter.*/
+
+let patternOne = /love/ // Koşulsuz
+let patternTwo = /love/gi // Burada g - tümünde ara, i - ise büyük küçük harfi duyarsız kıl anlamında kullanılır.
+
+let sampleMatchString = 'I love JavaScript. If you do not love JavaScript what else can you love.'
+console.log(sampleMatchString.match('love'))
+
+let pattern = /love/gi // Büyük küçük harfe duyarsız bir şekilde tamamında aramasını istedik.
+console.log(sampleMatchString.match(pattern))
+
+
+
+// REPEAT()
+
+let carName = "Mercedes "
+console.log(carName.repeat(5)) // Bu metot ile string değerini belirtilen sayı kadar tekrarlattık.
+
+
+
+// STRING TO INT
+
+/*
+- parseInt()
+- Number()
+- Plus sign (+)
+*/
+
+let num = "10" // Tırnak içine aldığımız için şu an sayımız string niteliğinde.
+let numInt = parseInt(num)
+
+console.log(numInt) // Bu şekilde string değerini number yapmış olduk.
+
+/*
+Diğer yöntemler:
+
+let num = "10"
+let numInt = Number(num)
+
+console.log(numInt) // Çıktı: 10 - Type: Number
+
+
+let num = "10"
+let numInt = +num
+
+console.log(numInt) // Çıktı: 10 - Type: Number
+*/
+
+
+
+// FLOAT TO INT
+
+// parseInt() ile oluşturacağımız bu yapıda, ondalık sayıları yuvarlayarak tam sayı haline getireceğiz.
+
+let floatNum = 9.81
+let floatInt = parseInt(floatNum) // Bu kısımda sayımızı otomatik olarak yakın olan tam sayıya yuvarlıyoruz.
+
+console.log(floatInt) // Ekrana tam sayı olarak çıktı verecektir. Çıktı: 9
+
 
