@@ -1,2 +1,6 @@
-# Js-notes
-My own Js notes
+# Js-Notes
+
+My own Javascript notes.
+
+
+** Short notes on Javascript.
