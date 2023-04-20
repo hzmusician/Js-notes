@@ -43,7 +43,7 @@ console.log(typeof araba); //undefinied
 
 
 
-// MATH OBJECT
+//! MATH OBJECT
 
 const PI = Math.PI
 
@@ -66,7 +66,7 @@ console.log(randNum)
 
 
 
-// STRING ÖRNEKLERİ
+//! STRING ÖRNEKLERİ
 
 let myname = "Batuhan", space = " ", surName = "KARAHAN", age = 23, countryTwo = "Turkey"
 
@@ -74,13 +74,13 @@ console.log("Hi! I'm " + myname + space + surName + ". I'm " + age + ". I live i
 
 // Bu şekilde yazmak hataya açık olmakla birlikte stabil olmayabilir. Daha stabil kullanım için ise:
 
-console.log(`I am ${myname} ${surName} I'm ${age} and I live in ${countryTwo}`)
+console.log(`I am ${myname} ${surName}. I'm ${age} and I live in ${countryTwo}`)
 
 // ${} yapısını kullanıyoruz. Bu yapıyı kullanmak için `` işaretleri arasında kodlama yapıyoruz
 
 
 
-// LENGTH
+//! LENGTH
 
 let isim = "Batuhan"
 
@@ -94,7 +94,7 @@ console.log(isim.length - 1) // Uzunluğunu bir karakter kısalttık
 
 
 
-// UPPERCASE() & LOWERCASE()
+//! UPPERCASE() & LOWERCASE()
 
 let darlingName = "Sena"
 
@@ -104,7 +104,7 @@ console.log(darlingName.toLowerCase()) // Çıktı : sena
 
 
 
-// SUBSTR()
+//! SUBSTR()
 
 let js = "Javascript" // Değişken atadık
 
@@ -114,7 +114,7 @@ console.log(js.substr(0,4)) // Aynı şekilde başlangıç değeri ve uzunluk de
 
 
 
-// SUBSTRING()
+//! SUBSTRING()
 
 console.log(js.substring(4,10)) // Başlangıç değeri ve bitiş değeri atadık Çıktı: script
 
@@ -122,7 +122,7 @@ console.log(js.substring(0,4)) // Aynı şekilde başlangıç ve bitiş ayarlad�
 
 
 
-// SPLIT()
+//! SPLIT()
 
 let sampleString = "Merhaba ben Batuhan KARAHAN"
 
@@ -138,7 +138,7 @@ console.log(countries.split(", ")) // Burada virgül ardından boşluk koyduğum
 
 
 
-// TRIM()
+//! TRIM()
 
 let sigara = "     Monte Carlo Slender Dark Blue      "
 
@@ -146,7 +146,7 @@ console.log(sigara.trim()) // Bu şekilde tırnak içerisindeki, baştaki ve son
 
 
 
-// INCLUDES()
+//! INCLUDES()
 
 console.log(sigara.includes("Carlo")) // True - String içerisinde varlık kontrolü yaptık.
 console.log(sigara.includes("carlo")) // False - Bu metot büyük/küçük harfe duyarlıdır
@@ -155,14 +155,14 @@ console.log(sigara.includes("dark")) // False
 
 
 
-// REPLACE()
+//! REPLACE()
 
 console.log(sigara.replace("Monte","Camel")) // Bu metot ile önce değiştirmek istediğimizi, sonra da ne olmasını istediğimiz kelimeyi yazıyoruz.
 console.log(sigara.replace("Dark","Light")) // Aynı şekilde değişmesini istediğimiz ve ne yazmasını istediğimiz değerleri yazdık.
 
 
 
-// CHARAT()
+//! CHARAT()
 
 let sample = "30 Days Of Javascript"
 
@@ -173,7 +173,7 @@ console.log(sample.charAt(lastIndex)) // 0'dan başlayarak saydığımızda t ha
 
 
 
-// CHARCODEAT()
+//! CHARCODEAT()
 
 console.log(sample.charCodeAt(3)) // İndex değerinin ASCII tablosuna göre değerini bastık. Çıktı: 68
 
@@ -181,7 +181,7 @@ console.log(sample.charCodeAt(lastIndex)) // Aynı şekilde tablo üzerinde değ
 
 
 
-// INDEXOF()
+//! INDEXOF()
 
 // Belirtilen değerin index'ini bulmamızı sağlar, bulamazsa -1 döndürür. Bu metot büyük/küçük harfe duyarlıdır.
 
@@ -195,14 +195,14 @@ console.log(sample.indexOf('script'))     // -1
 
 
 
-// LASTINDEXOF()
+//! LASTINDEXOF()
 
 console.log(sample.lastIndexOf("Days")) // 3 - Bu metot ile belirtilen değerin son indeksini bulduk
 console.log(sample.lastIndexOf("java")) // -1 - Büyük küçük harfa duyarlı olmasından dolayı burada -1 döndürür.
 
 
 
-// CONCAT()
+//! CONCAT()
 
 let sampleConcat = "30"
 // concat() metodu ile değişkenimizin devamında ne yazmasını istediğimizi belirttik.
@@ -211,7 +211,7 @@ console.log(sampleConcat.concat(" ways ","to ","die")) // Çıktı: 30 ways to d
 
 
 
-// STARTSWITH()
+//! STARTSWITH()
 
 let sampleStartsWith = "Love is the best to in this world"
 
@@ -220,14 +220,14 @@ console.log(sampleStartsWith.startsWith("love")) // false - Büyük/küçük har
 
 
 
-// ENDSWITH()
+//! ENDSWITH()
 
 /* Bu metot ise startsWith() metodunun tam tersi olarak çalışır. Ne ile bittiğini döndürmemizi sağlar
 Yine aynı şekilde büyük/küçük harfe duyarlıdır. */
 
 
 
-// SEARCH
+//! SEARCH
 
 let sampleSearch = "I love Javascript. If you do not love Javascript what else can you love."
 // Argüman olarak bir alt dize alır ve ilk eşleşmenin dizinini döndürür. Arama değeri bir dize veya normal ifade kalıbı olabilir.
@@ -236,7 +236,7 @@ console.log(sampleSearch.search("you")) // Çıktı: 22
 
 
 
-// MATCH()
+//! MATCH()
 
 let sampleMatch = "Love is love"
 /*Argüman olarak bir alt dize veya normal ifade kalıbı alır ve eşleşme varsa bir dizi döndürür, değilse null döndürür. Normal bir ifade kalıbının nasıl göründüğünü görelim. / işareti ile başlar ve / işareti ile biter.*/
@@ -252,14 +252,14 @@ console.log(sampleMatchString.match(pattern))
 
 
 
-// REPEAT()
+//! REPEAT()
 
 let carName = "Mercedes "
 console.log(carName.repeat(5)) // Bu metot ile string değerini belirtilen sayı kadar tekrarlattık.
 
 
 
-// STRING TO INT
+//! STRING TO INT
 
 /*
 - parseInt()
@@ -267,7 +267,7 @@ console.log(carName.repeat(5)) // Bu metot ile string değerini belirtilen sayı
 - Plus sign (+)
 */
 
-let num = "10" // Tırnak içine aldığımız için şu an sayımız string niteliğinde.
+let num = "10" // Tırnak içine aldığımız için sayımız şu an string niteliğinde.
 let numInt = parseInt(num)
 
 console.log(numInt) // Bu şekilde string değerini number yapmış olduk.
@@ -289,7 +289,7 @@ console.log(numInt) // Çıktı: 10 - Type: Number
 
 
 
-// FLOAT TO INT
+//! FLOAT TO INT
 
 // parseInt() ile oluşturacağımız bu yapıda, ondalık sayıları yuvarlayarak tam sayı haline getireceğiz.
 
@@ -299,3 +299,182 @@ let floatInt = parseInt(floatNum) // Bu kısımda sayımızı otomatik olarak ya
 console.log(floatInt) // Ekrana tam sayı olarak çıktı verecektir. Çıktı: 9
 
 
+
+//! ATAMA OPERATÖRLERİ
+
+/*
+ Eşittir =
+ Toplama + 
+ Çıkarma -
+ Çarpma *
+ Bölme /
+ Mod %
+ Üslü sayı **
+*/
+
+/*
+let x = y
+let x + y
+let x * y
+let x / y
+let x % y
+let x ** y
+*/
+
+
+
+//! KARŞILAŞTIRMA OPERATÖRLERİ
+
+console.log(3 > 2)              // true, çünkü 3 2 den büyüktür
+console.log(3 >= 2)             // true, çünkü 3 2 den büyüktür
+console.log(3 < 2)              // false,  çünkü 3 2 den büyüktür
+console.log(2 < 3)              // true, çünkü 2 3 den küçüktür
+console.log(2 <= 3)             // true, çünkü 2 3 den küçüktür
+console.log(3 == 2)             // false, çünkü 3 2 ye eşit değildir
+console.log(3 != 2)             // true, çünkü 3 2 ye eşit değildir
+console.log(3 == '3')           // true, sadece değeri karşılaştırıyor
+console.log(3 === '3')          // false, hem değeri hemde veri türünü karşılaştırıyor o yüzden yanlış. Birisi int değeri birisi string değerinden ( Bu denklik operatörü )
+console.log(3 !== '3')          // true, hem değeri hemde veri türünü karşılaştırıyor o yüzden doğru. (Bu denk değil operatörü)
+console.log(3 != 3)             // false, değeri karşılaştırıyor
+console.log(3 !== 3)            // false, hem değeri hem de veri türünü karşılaştırıyor
+console.log(0 == false)         // true, eşdeğer
+console.log(0 === false)        // false, tam olarak aynı değil
+console.log(0 == '')            // true, eşdeğer
+console.log(0 == ' ')           // true, eşdeğer
+console.log(0 === '')           // false, tam olarak aynı değil
+console.log(1 == true)          // true, eşdeğer
+console.log(1 === true)         // false, tam olarak aynı değil
+console.log(undefined == null)  // true
+console.log(undefined === null) // false
+console.log(NaN == NaN)         // false, eşit değil
+console.log(NaN === NaN)        // false
+console.log(typeof NaN)         // number
+
+console.log('mango'.length == 'avocado'.length)  // false
+console.log('mango'.length != 'avocado'.length)  // true
+console.log('mango'.length < 'avocado'.length)   // true
+console.log('milk'.length == 'meat'.length)      // true
+console.log('milk'.length != 'meat'.length)      // false
+console.log('tomato'.length == 'potato'.length)  // true
+console.log('python'.length > 'dragon'.length)   // false
+
+
+
+//! MANTIKSAL OPERATÖRLER
+
+// && ve işareti
+const andSymbol = 4 > 3 && 5 > 1 // İki şart doğrulanırsa true çıktı alırız.
+
+// || veya işareti
+const orSymbol = 4 > 3 || 5 > 1 // İki şarttan birisi doğrulanırsa true çıktı alırız.
+
+// "!" olumsuzlama işareti
+const nagetiveSymbol = !false // false olarak atamamıza rağmen, olumsuzlama yapacağı için true çıktısı alacağız.
+
+console.log(andSymbol, orSymbol, nagetiveSymbol)
+
+
+
+//! ARTTIRMA OPERATÖRÜ
+
+let increase = 0
+
+// Öncesi arttırma
+console.log(++increase) // 1 çıktısını alırız
+
+// Sonrası arttırma
+console.log(increase++) // 1 çıktısını alırız
+
+
+
+//! AZALTMA OPERATÖRÜ
+
+let decrease = 0
+
+// Öncesi azaltma
+console.log(--decrease) // -1 çıktısını alırız
+
+// Sonrası azaltma
+console.log(decrease--) // -1 çıktısını alırız
+
+
+
+//! KOŞUL OPERATÖRÜ (Ternary)
+
+// Bu operatörü kısa if olarak tanımlayabiliriz.
+
+let myAge = 23
+let myAgeResult = myAge < 20 ? "20 Yaşından küçüksün" : "20 Yaşından büyüksün"
+console.log(myAgeResult)
+
+// Örnekte ? işaretini if olarak, : işaretini de else olarak kullandık ve sonucu konsola bastırdık
+
+let myCar = 2014
+let carModel = myCar < 2013 ? "Arabam 2013 model aşağısında" : "Arabam 2013 model yukarısında"
+console.log(carModel)
+
+
+
+//! WINDOW METODLARI
+
+
+//! Alert()
+
+    // alert("Hoşgeldin") // Bu metod sayesinde, site açıldığında pencere olarak bilgi ekranı vermiş olduk.
+
+//! Prompt()
+
+ /* let promptNumber = prompt("Enter Number","Number Goes Here")
+    console.log(promptNumber) */
+
+// Bu metod sayesinde ise açılan pencereye değer girme ve değişkenimize o değeri atama yetkisi vermiş olduk. Ardında da kosnola bastırdık.
+
+//! Confirm()
+
+ /* const agree = confirm("Emin misin?")
+    console.log(agree) */
+
+// Bu metod ile de kabul et veya etme şeklinde butonlar olan bir pencere açmış olduk.
+
+
+
+//! DATE OBJESİ
+
+const now = new Date()
+
+/*
+console.log(now.getFullYear()) (Yılı belirtir)
+console.log(now.getMonth()) (Ayı belirtir fakat 0'dan saymaya başladığı için ocak = 0 olacaktır)
+console.log(now.getDate()) (Günü belirtir)
+console.log(now.getHours()) (Saati belirtir)
+console.log(now.getMinutes()) (Dakikayı belirtir)
+console.log(now.getSeconds()) (Saniyeyi belirtir)
+console.log(now.getMiniseconds()) (Milisaniyeyi belirtir)
+console.log(now.getTime()) (Tam tarihi belirtir)
+console.log(now.getDay()) (Haftalık olarak gün belirtir "1-7")
+*/
+
+//! GETTIME()
+
+const timeSample = new Date()
+console.log(timeSample.getTime()) // 1 ocak 1970'den itibaren anlık zamana kadar geçen süreyi milisaniye olarak gösterir.
+
+//! DATENOW()
+
+const allSeconds = Date.now() //
+console.log(allSeconds) // 1 Ocak 1970 den kullandığınız zaman arasındaki süreyi milisaniye cinsinden verecektir.
+
+const timeInSeconds = new Date().getTime()
+console.log(allSeconds == timeInSeconds) // true
+
+// Daha anlaşılır bir şekilde anlık olarak tam tarih verelim.
+
+const time = new Date() // Değ"işkeni tarih olarak atadık
+const year = time.getFullYear() // Yılı istedik
+const month = time.getMonth() + 1 // Ayı istedik fakat sıfırdan saymaya başladığı için +1 dedik
+const day = time.getDate() // Günü istedik 
+const hour = time.getHours() // Saati istedik
+const minute = time.getMinutes() // Dakikayı istedik
+const second = time.getSeconds() // Saniyeyi istedik
+
+console.log(`Şu an tarih: ${year}/${month}/${day} - ${hour}:${minute}:${second}`) // Sırayla hepsini belirttik.
