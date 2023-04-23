@@ -614,3 +614,91 @@ console.log(arrTwo)
 
 
 //! SPLIT İLE DİZİ OLUŞTURMAK
+
+let jsArr = "JavaScript"
+let jsArrSplit = jsArr.split("")
+
+console.log(jsArrSplit)
+
+
+let compainesString = "Facebook, Google, Amazon, IBM, Oracle"
+const compaines = compainesString.split(",")
+
+console.log(compaines)
+
+
+let txt = "I love teaching and empowering people. I teach HTML, CSS, JS, React, Python."
+const words = txt.split(" ")
+
+console.log(words)
+
+
+
+//! INDEX KULLANARAK ELEMANA ULAŞMAK
+
+const  fruits = ['banana', 'orange', 'mango', 'lemon']
+
+let  firstFruit = fruits[0] // 1. eleman'a o elemanın indexini kullanarak erişiyoruz.  
+console.log(firstFruit) // banana
+  
+
+secondFruit = fruits[1]
+console.log(secondFruit) // orange
+  
+
+let  lastFruit = fruits[3]
+console.log(lastFruit) // lemon
+
+// Son eleman devam eden örnekteki gibi hesaplanabilir  
+
+let  lastIndexFruit = fruits.length - 1
+lastFruit = fruits[lastIndexFruit]  
+
+console.log(lastFruit) // lemon
+
+
+const  webTechs = [
+
+    'HTML',
+    
+    'CSS',
+    
+    'JavaScript',
+    
+    'React',
+    
+    'Redux',
+    
+    'Node',
+    
+    'MongoDB'
+    
+    ] // Web teknolojilerinin Listesi
+    
+    console.log(webTechs) // Dizi elemanlarının hepsi
+    
+    console.log(webTechs.length) // => dizinin uzunluğunu bilebiliriz. O da 7'dir
+    
+    console.log(webTechs[0]) // -> HTML
+    
+    console.log(webTechs[6]) // -> MongoDB
+    
+      
+    
+    let  lastIndexWeb = webTechs.length - 1
+    
+    console.log(webTechs[lastIndexWeb]) // -> MongoDB
+
+
+
+    //! DİZİ ELEMANLARINI DÜZENLEMEK
+
+    let basicArr = ["Batuhan","KARAHAN","Starbucks","Barista"]
+
+    basicArr[0] = 'Sena' // İlk elemanı Sena olarak değiştirdik.
+    
+    console.log(basicArr) // Düzenlenmiş diziyi konsola bastık.
+
+
+
+    //! DİZİYİ MANİPÜLE ETMEK
