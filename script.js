@@ -427,7 +427,7 @@ console.log(carModel)
  /* let promptNumber = prompt("Enter Number","Number Goes Here")
     console.log(promptNumber) */
 
-// Bu metod sayesinde ise açılan pencereye değer girme ve değişkenimize o değeri atama yetkisi vermiş olduk. Ardında da kosnola bastırdık.
+// Bu metod sayesinde ise açılan pencereye değer girme ve değişkenimize o değeri atama yetkisi vermiş olduk. Ardında da konsola bastırdık.
 
 //! Confirm()
 
@@ -478,3 +478,139 @@ const minute = time.getMinutes() // Dakikayı istedik
 const second = time.getSeconds() // Saniyeyi istedik
 
 console.log(`Şu an tarih: ${year}/${month}/${day} - ${hour}:${minute}:${second}`) // Sırayla hepsini belirttik.
+
+
+
+//! KOŞULLAR
+
+// IF 
+
+let numIf = 3
+if (num > 1) { // Koşulumuzu parantez içinde belirtip, şartı sağlıyorsa ne olmasını gerektiğini yazdık.
+    console.log(`${numIf} 1'den büyük bir sayıdır`)
+}
+
+let isRaining = true
+
+if(isRaining){
+    console.log("Remember to take your rain coat") // Aynı şekilde şartı sağlayınca konsola çıktı verdik.
+}
+
+
+
+// IF - ELSE 
+
+//numIf=3
+if (numIf > 4) {
+    console.log(`${numIf} 4'den büyük bir sayıdır.`)
+}
+else {
+    console.log(`${numIf} 4'den küçük bir sayıdır.`)
+} // else yapısı ile koşulumuza ikinci bir seçenek belirledik. Eğer ilk şart doğrulanmazsa ikinci şartı gerçekleştirecek.
+
+
+
+// IF - ELSE - ELSE IF
+
+//numIf=3
+if (numIf > 4) {
+    console.log(`${numIf} 4'den büyük bir sayıdır.`)
+}
+else if (numIf = 3) {
+    console.log(`${numIf} 3'e eşittir.`)
+}
+else {
+    console.log(`${numIf} 3'den küçük bir sayıdır.`)
+}
+// Else if yapısı ile sayısız kere koşul oluşturabilir ve çıktı alabiliriz.
+
+
+
+//! SWITCH
+
+let weather = 'cloudy'
+switch (weather) { // swtich'e değişkenimizi belirttik.
+  case 'rainy': // Şartı sunduk
+    console.log('You need a rain coat.') // Doğruysa çıktı olarak bu metni aldık.
+    break // Şartı bitirdik.
+  case 'cloudy': // Şartı sunduk
+    console.log('It might be cold, you need a jacket.') // Doğruysa çıktı olarak bu metni aldık.
+    break // Şartı bitirdik.
+  case 'sunny': // Şartı sunduk
+    console.log('Go out freely.')
+    break // Şartı bitirdik.
+  default: // else yapısı olarak düşünebiliriz
+    console.log(' No need for rain coat.') // Doğruysa çıktı olarak bu metni aldık.
+}
+
+let whatDay = prompt("What day is today?") // Kişiden bi gün girmesini istedik.
+let dayInput = whatDay.toLowerCase() // küçük harfleri zorunlu kıldık.
+
+switch(dayInput) {
+    case 'monday':
+        console.log("Today is Monday")
+        break
+    case 'tuesday':
+        console.log("Today is Tuesday")
+        break
+    case 'wednesday':
+        console.log("Today is Wednesday")
+        break
+    case 'thursday':
+        console.log("Today is Thursday")
+        break
+    case 'friday':
+        console.log("Today is Friday")
+        break
+    case 'saturday':
+        console.log("Today is Saturday")
+        break
+    case 'sunday':
+        console.log("Today is Sunday")
+        break
+    default: // Eğer yazılan değer yanlışsa bu çıktıyı vermesini istedik.
+        console.log("It is not a week day!")
+}
+
+
+
+// TERNARY OPERATÖRÜ
+
+//let isRaining = true
+
+isRaining
+    ? console.log("You need a rain coat")
+    : console.log("No need for a rain coat")
+
+
+
+//! ARRAY (DİZİLER)
+
+const arr = [] // Boş bir array oluşturduk.
+
+let personArray = [
+    personName = "Batuhan", 
+    personSurname = "KARAHAN",
+    personAge = 23,
+    personJob = "Developer"
+] // Birçok değerden oluşan bi array oluşturup konsola bastırdık. Aralarında virgül kullanılmalı
+
+console.log(personArray)
+
+console.log("Person: ", personArray)
+console.log("Numbers of Person: ", personArray.length) // Bu metod ile de diziyi ve dizi uzunluğunu yazdırdık.
+
+const arrTwo = [
+    "Şahbaz",
+    25,
+    "Developer",
+    true,
+    {country: "Finland", city: "Helsinki"},
+    {skills: ["HTML", "CSS", "JAVASCRIPT"]}
+] // Arr farklı değerler içerebilir.
+
+console.log(arrTwo)
+
+
+
+//! SPLIT İLE DİZİ OLUŞTURMAK
