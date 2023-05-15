@@ -3,4 +3,4 @@
 My own Javascript notes.
 
 
-** Short notes on Javascript.
+Short notes on Javascript.
