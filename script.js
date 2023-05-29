@@ -702,3 +702,5 @@ const  webTechs = [
 
 
     //! DİZİYİ MANİPÜLE ETMEK
+
+    
