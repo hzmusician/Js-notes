@@ -1,5 +1,3 @@
-# Js-Notes
-
 My own Javascript notes.
 
 
