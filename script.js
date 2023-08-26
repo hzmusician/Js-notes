@@ -728,3 +728,11 @@ const  webTechs = [
 
     const  four4values = Array(4).fill(4) //'4' değerine sahip 8 tane eleman oluşturur.
     console.log(four4values) // [4, 4, 4, 4]
+
+    //* Concat
+
+    const firstlist = [1, 2, 3]
+    const secondList = [4, 5, 6]
+    const thirdList = firstlist.concat(secondList)
+
+    console.log(thirdList) // [1, 2, 3, 4, 5, 6]
