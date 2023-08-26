@@ -705,4 +705,26 @@ const  webTechs = [
 
     //! DİZİYİ MANİPÜLE ETMEK
 
-    
+    /*Diziyi manüple edebilmek için farklı metotlar vardır. Bunlar dizilerle uğraşmak için kullanışlı yöntemlerden bazılarıdır. Bu yöntemler: Array, length, concat, indexOf, slice, splice, join, toString, includes, lastIndexOf, isArray, fill, push, pop, shift, unshift*/
+
+    //* Array 
+
+    const arr = Array() // İçerisi boş olan bir dizi yarattık.
+    console.log(arr)
+
+    const sevenEmptyValues = Array(7) // 7 adet boş değer atadık.
+    console.log(sevenEmptyValues) // [empty x 7]
+
+    //* Fill
+
+    const  arr = Array() // Boş bir dizi yaratır
+    console.log(arr)
+
+    const  eightXvalues = Array(8).fill('X') // 'X'değerine sahip 8 tane eleman oluşuturur.
+    console.log(eightXvalues) // ['X', 'X','X','X','X','X','X','X'] 
+
+    const  eight0values = Array(8).fill(0) // '0' değerine sahip 8 tane eleman oluşturur.
+    console.log(eight0values) // [0, 0, 0, 0, 0, 0, 0, 0]
+
+    const  four4values = Array(4).fill(4) //'4' değerine sahip 8 tane eleman oluşturur.
+    console.log(four4values) // [4, 4, 4, 4]
