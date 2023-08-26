@@ -1,3 +1,5 @@
+//! JAVASCRIPT KONU ÖZETLERİ / KISA NOTLAR
+
 // let = Değişebilen değişkenler tanımlamamızı sağlar
 // const = Değişmeyen değişkenler tanımlamamızı sağlar
 
