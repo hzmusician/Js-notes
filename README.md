@@ -1,5 +1,7 @@
 # MY OWN JAVASCRIPT NOTES
 
+<img src="https://github.com/hzmusician/Js-notes/blob/main/Screenshots/JavaScript-logo.png" width="400px" height="auto">
+
 A project in which I compiled the topics of a detailed programming language such as Javascript in short titles and examples. 
 I wanted to prepare an environment where people can quickly find the subject they are curious about or want to learn, see the examples, run it in the compiler and try it themselves. :+1:
 
